@@ -24,3 +24,22 @@ myMoneyBox(15);
 const moneyBoxAna = moneyBox();
 moneyBoxAna(10);
 moneyBoxAna(12);
+
+
+
+function createPetList() {
+    const PetList = [];
+    function rememberPets(newPet) {
+        if (newPet === undefined) {
+            return PetList;
+        }
+        PetList.push(newPet);
+        console.log(PetList)
+    }
+    return rememberPets
+  }
+  const oscarPetList = createPetList();
+
+  oscarPetList("michi");
+  oscarPetList("gato");
+  oscarPetList();
